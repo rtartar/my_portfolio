@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
-import Me from '../Me.jpeg'
+import image from '../green.jpeg';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -27,7 +27,7 @@ export default function About() {
 
     return (
     <main className="relative">
-        <img src={Me}
+        <img src={image}
             className="absolute w-full"
             alt="Background"/>
         <div className="p-10 lg:pt-48 container mx-auto relative">

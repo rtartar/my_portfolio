@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../bkgc.webp';
+import image from '../green.jpeg';
 
 export default function Home() {
     return (
@@ -10,7 +10,7 @@ export default function Home() {
             <section 
             className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
                 <h1 
-                className="text-6xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name">
+                className="text-6xl text-black-100 font-bold cursive leading-none lg:leading-snug home-name">
                     Hello, I'm Ryan!
                     </h1>
             </section>
