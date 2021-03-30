@@ -26,14 +26,11 @@ export default function About() {
     if (!author) return <div>Loading...</div>;
 
     return (
-    <main className="relative">
-        <img src={image}
-            className="absolute w-full"
-            alt="Background"/>
+    <main className="relative bg-white">
         <div className="p-10 lg:pt-48 container mx-auto relative">
-            <section className="bg-green-800 roundded-lg shadow-2xl lg:flex p-20">
+            <section className="bg-white-100 border-4 border-green-500 border-opacity-100 rounded-lg shadow-2xl lg:flex p-20">
                 <img src={urlFor(author.authorImage).url()}
-                className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
+                className="rounded w-15 h-15 lg:w-40 lg:h-64 mr-8"
                 alt={author.name}/>
                 <div className="text-lg flex flex-col justify-center">
                     <h1 className="cursive text-lg text-green-300 mb-4">
