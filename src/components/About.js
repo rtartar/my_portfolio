@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
-import image from '../green.jpeg';
+
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -33,9 +33,9 @@ export default function About() {
                 className="rounded w-15 h-15 lg:w-40 lg:h-64 mr-8"
                 alt={author.name}/>
                 <div className="text-lg flex flex-col justify-center">
-                    <h1 className="cursive text-lg text-green-300 mb-4">
+                    <h1 className="cursive text-lg text-green-600 mb-4">
                         Hey there. I'm{" "}
-                        <span className="text-green-100">{author.name}</span>
+                        <span className="text-green-600">{author.name}</span>
                     </h1>
                     <div className="prose lg:prose-xl text-white">
                         <BlockContent blocks={author.bio}
