@@ -5,6 +5,7 @@ import SinglePost from './components/SinglePost';
 import Post from './components/Post';
 import Project from './components/Project';
 import NavBar from './components/NavBar';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route component={Home} path='/' exact />
         <Route component={About} path='/about' />
         <Route component={SinglePost} path='/post/:slug' />
-        <Route component={Post} path='/post' />
+        <Route component={Post} path='/post' /> 
+        <Route component={Contact} path='/contact' />
         <Route component={Project} path='/projects' />
       </Switch>
     </Router>

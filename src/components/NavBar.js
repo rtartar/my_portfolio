@@ -3,8 +3,9 @@ import { NavLink} from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
 
 export default function NavBar() {
+
     return (
-        <header className="bg-white-100">
+        <header className="bg-inherit">
             <div className="container mx-auto flex justify-between">
                 <nav className="flex gap-20">
                     <NavLink to='/' 
@@ -26,11 +27,17 @@ export default function NavBar() {
                     >
                         Projects
                     </NavLink>
-                    <NavLink to='/post'
+                    {/* <NavLink to='/post'
                      className="inline-flex items-center py-3 px-3 my-6 rounded text-green-500 hover:text-purple-800 text-2xl"
                      activeClassName="text-purple-100 bg-purple-700"
                      >
                         Blog Posts
+    </NavLink> */}
+                    <NavLink to='/Contact'
+                    className="inline-flex items-center py-3 px-3 my-6 rounded text-green-500 hover:text-purple-800 text-2xl"
+                    activeClassName="text-purple-100 bg-purple-700"
+                    >
+                        Get In Touch
                     </NavLink>
                 </nav>
                 <div className="inline-flex py-3 px-3 my-10 gap-20">
