@@ -27,7 +27,7 @@ export default function About() {
 
     return (
     <main className="relative bg-white">
-        <div className="p-10 lg:pt-48 container mx-auto relative">
+        <div className="p-10 lg:pt-48 container mx-auto relative w-auto">
             <section className="bg-white-100 border-4 border-green-500 border-opacity-100 rounded-lg shadow-2xl lg:flex p-20">
                 <img src={urlFor(author.authorImage).url()}
                 className="rounded w-15 h-15 lg:w-90 lg:h-80 mr-8"

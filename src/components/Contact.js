@@ -18,7 +18,7 @@ export default function Contact() {
         <main className="relative bg-white">
             <div className="p-40 grid grid-cols-6 grid-rows-3">
                 <div className="col-start-1 col-span-2 row-start-2 row-span-2">
-                    <section className="bg-white-100 p-20 border-4 border-green-500 border-opacity-100 rounded-lg shadow-2xl mx-32">
+                    <section className="bg-white-100 p-20 mx-32">
                     <Mailto email="ryantartar32@gmail.com"
                             subject=""
                             body="">
@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="col-start-5 col-span-2 row-span-2 row-start-2 ">
 
             <section 
-            className="bg-white-100 p-20 mx-32 border-4 border-green-500 border-opacity-100 rounded-lg shadow-2xl">
+            className="bg-white-100 p-20 mx-32">
                     <h3><FcPhoneAndroid className="h-20 w-20"/>
                     720-999-2361</h3>
             </section>
