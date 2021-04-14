@@ -1,13 +1,12 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
 
 export default function NavBar() {
 
     return (
-        <header className="bg-inherit">
-            <div className="container mx-auto flex justify-between w-auto">
-                <nav className="flex gap-20">
+        <header className="bg-inherit w-screen">
+            <div className="container mx-auto flex justify-between w-screen">
+                <nav className="flex lg:gap-40 sm:gap-10">
                     <NavLink to='/' 
                     exact 
                     activeClassName="text-green"
@@ -40,28 +39,6 @@ export default function NavBar() {
                         Get In Touch!
                     </NavLink>
                 </nav>
-                <div className="inline-flex py-3 px-3 my-10 gap-20">
-                    <SocialIcon 
-                    url="https://www.linkedin.com/in/ryan-tartar-2b2a96158/" 
-                    className="mr-4" 
-                    target="_blank" 
-                    fgColor="#fff" 
-                    style={{ height: 35, width: 35}} 
-                    />
-                    <SocialIcon 
-                    url="https://www.facebook.com/ryan.tartar/" 
-                    className="mr-4" 
-                    target="_blank" 
-                    fgColor="#fff" 
-                    style={{ height: 35, width: 35}} 
-                    />
-                    <SocialIcon url="https://www.github.com/rtartar" 
-                    className="mr-4" 
-                    target="_blank" 
-                    fgColor="#fff" 
-                    style={{ height: 35, width: 35}} 
-                    />
-                </div>
             </div>
         </header>
     )
