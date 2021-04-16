@@ -6,7 +6,8 @@ export default function Footer() {
 
 
     return (
-        <div className="w-screen justify-center inline-flex py-3 px-3 my-10 gap-20">
+        <div>
+        <div className="w-screen justify-center inline-flex py-3 px-3 my-10 md:gap-32">
                     <SocialIcon 
                     url="https://www.linkedin.com/in/ryan-tartar-2b2a96158/" 
                     className="mr-4" 
@@ -27,6 +28,10 @@ export default function Footer() {
                     fgColor="#fff" 
                     style={{ height: 35, width: 35}} 
                     />
+                    </div>
+                    <div className="text-sm flex justify-end">
+                        Built with React and Sanity.io
+                    </div>
                 </div>
     )
 }

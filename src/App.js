@@ -20,7 +20,7 @@ function App() {
         <Route component={Contact} path='/contact' />
         <Route component={Project} path='/projects' />
       </Switch>
-      <Footer/>
+      <Footer className="fixed bottom-0"/>
     </Router>
   )
 }

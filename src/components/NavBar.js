@@ -32,7 +32,7 @@ export default function NavBar() {
                      >
                         Blog Posts
     </NavLink> */}
-                    <NavLink to='/Contact'
+                    <NavLink to='/contact'
                     className="inline-flex items-center py-3 px-3 my-6 rounded text-green-600 hover:text-purple-800 text-2xl"
                     activeClassName="text-purple-100 bg-purple-700"
                     >

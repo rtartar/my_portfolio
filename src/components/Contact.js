@@ -1,6 +1,7 @@
 import React from 'react';
 import { FcPhoneAndroid } from 'react-icons/fc';
 import { GoMail } from 'react-icons/go';
+import bg from '../bkgc.jpeg';
 
 
 const Mailto = ({ email, subject = '', body = '', children }) => {
@@ -15,8 +16,8 @@ const Mailto = ({ email, subject = '', body = '', children }) => {
 export default function Contact() {
     
     return (
-        <main className="relative bg-white">
-            <div className="p-40 grid grid-cols-6 grid-rows-3">
+        <main className="relative" background={bg}>
+            <div className="p-40 grid grid-cols-6 grid-rows-3" background={bg}>
                 <div className="col-start-1 col-span-2 row-start-2 row-span-2">
                     <section className="bg-white-100 p-20 mx-32">
                     <Mailto email="ryantartar32@gmail.com"
